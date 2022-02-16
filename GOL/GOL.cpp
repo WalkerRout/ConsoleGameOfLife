@@ -43,8 +43,8 @@ namespace Life {
 
         neighbours -= grid[i][j] & 1;
 
-        if ((grid[i][j] == 1) && (neighbours < 2)) newGrid[i][j]      = 0;
-        else if ((grid[i][j] == 1) && (neighbours >  3)) newGrid[i][j] = 0;
+        if ((grid[i][j] == 1) && (neighbours < 2)) newGrid[i][j]       = 0;
+        else if ((grid[i][j] == 1) && (neighbours > 3)) newGrid[i][j]  = 0;
         else if ((grid[i][j] == 0) && (neighbours == 3)) newGrid[i][j] = 1;
         else newGrid[i][j] = grid[i][j];
       }
